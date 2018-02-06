@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ecommerce Online Shopping | Mobile</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="is-home">
+
+<header class="header header_mod">
+
+	<!-- Вверхняя линия -->
+	<div class="top-line top-line_mod">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<span class="top-line__item" aria-hidden="true"><i class="fa fa-clock-o top-line__item-icon"></i> Работаем без выходных</span>
+			</div>
+			<div class="col-md-4 col-sm-6" aria-hidden="true">
+				<span class="top-line__item top-line__item_border"><i class="fa fa-shopping-cart top-line__item-icon"></i> Бесплатная и быстрая доставка</span>
+			</div>
+			<div class="col-md-4 col-sm-12" aria-hidden="true">
+				<span class="top-line__item"><i class="fa fa-envelope top-line__item-icon"></i> <a href="mailto:info@example.com" class="top-line__link">info@example.com</a></span>
+			</div>
+		</div><!-- //row -->
+	</div><!-- //Вверхняя линия -->
+	
+	<!-- Панель в шапке -->
+	<div class="header-panel">
+
+		<div class="m-top-20"></div>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-12">
+
+				<div class="logo logo_mod">
+					<a href="#" class="logo-link"><img src="img/logo.png" alt=""></a>
+				</div>
+
+			</div>
+			<div class="col-md-6 col-sm-8 col-xs-12">
+
+				<form action="" class="search-form search-form_mod">
+
+						<input type="search" class="search-form__input" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск';}" autofocus="autofocus" required="">
+
+						<select id="list-production" onchange="" class="search-form__select search-form__select_arrow">
+							<optgroup label="Устройства Samsung">
+								<option value="mobile samsung" selected>Телефоны Samsung</option>
+								<option value="tablet PC samsung">Планшеты Samsung</option>
+								<option value="watch samsung">Часы Samsung</option>
+							</optgroup>
+							<optgroup label="Аксессуары">
+								<option value="charger devices">Зарядные устройства</option>
+								<option value="cases">Чехлы</option>
+								<option value="protective glass">Защитные стекла</option>
+								<option value="audio devices">Аудиоустройства</option>
+							</optgroup>
+						</select>
+
+						<button type="submit" class="search-form__submit"><i class="fa fa-search search-form__submit-icon"></i></button>
+
+						<div class="clearfix"></div>
+
+				</form>
+
+				<ul class="social-list social-list_mod">
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-vk social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-facebook social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-google-plus social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-odnoklassniki social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-youtube social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-android social-list__icon"></i></a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link"><i class="fa fa-apple social-list__icon"></i></a></li>
+				</ul>
+
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="panel-logreg panel-logreg_mod">
+					<button class="btn-logreg btn-logreg_blue" data-toggle="modal" data-target="#myModalEntrance"><i class="fa fa-user btn-logreg__icon"></i> Войти</button>
+					<br>
+					<button class="btn-logreg btn-logreg_green" data-toggle="modal" data-target="#myModalReg"><i class="fa fa-plus btn-logreg__icon"></i> Регестрация</button>
+				</div>
+			</div>
+
+		</div><!-- //row -->
+
+		<div class="m-bottom-20"></div>
+
+	</div><!-- //Панель в шапке -->
+
+</header>
+
+
+
+<!-- login -->
+<div class="modal fade" id="myModalEntrance" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="myModalLabelLogin">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close modal-loginreg__button-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				
+				<h3 id="myModalLabelLogin" class="modal-loginreg__main-title">Личный кабинет</h3>
+
+				<form action="" class="loginreg-form loginreg-form_mod">
+					<div class="loginreg-form__part">
+						<h4 class="loginreg-form__title">Электронный почта:</h4>
+						<input type="text" class="loginreg-form__input" value="Эл. почта" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Эл. почта';}" required="">
+					</div>
+					<div class="loginreg-form__part">
+						<h4 class="loginreg-form__title">Пароль:</h4>
+						<input type="password" class="loginreg-form__input" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+					</div>
+					<div class="loginreg-form__part">
+						<a href="#" class="loginreg-form__link">Забыли пароль?</a>
+					</div>
+					<div class="loginreg-form__part">
+						<input type="checkbox" class="loginreg-form__checkbox" id="remember-password">
+						<label for="remember-password" class="loginreg-form__label">Запомнить пароль</label>
+					</div>
+					<div class="loginreg-form__part">
+						<input type="submit" class="loginreg-form__input loginreg-form__input_submit" value="Войти">
+					</div>
+					<div class="loginreg-form__part">
+						<p class="loginreg-form__agree">Войдя в систему, Вы соглашаетесь с нашими <a href="#" class="loginreg-form__link">условиями</a> и <a href="#" class="loginreg-form__link">политикой конфиденциальности.</a></p>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //login -->
+
+<!-- registration -->
+<div class="modal fade" id="myModalReg" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="myModalLabelReg">
+	<div class="modal-dialog modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close modal-loginreg__button-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				
+				<h3 id="myModalLabelReg" class="modal-loginreg__main-title">Регистрация</h3>
+
+				<form action="" class="loginreg-form loginreg-form_mod">
+					<div class="loginreg-form__part">
+						<h4 class="loginreg-form__title">Электронный почта:</h4>
+						<input type="text" class="loginreg-form__input" value="Эл. почта" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Эл. почта';}" required="">
+					</div>
+					<div class="loginreg-form__part">
+						<h4 class="loginreg-form__title">Пароль:</h4>
+						<input type="password" class="loginreg-form__input" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+					</div>
+					<div class="loginreg-form__part">
+						<h4 class="loginreg-form__title">Повторите пароль:</h4>
+						<input type="password" class="loginreg-form__input" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+					</div>
+					<div class="loginreg-form__part">
+						<input type="submit" class="loginreg-form__input loginreg-form__input_submit" value="Зарегестрироваться">
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //registration -->
+
+
+<div class="main-menu main-menu_mod">	
+	<div class="container">
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      	<span class=sr-only>Кнопка, для переключения навигации</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+
+		    <div class="collapse navbar-collapse main-menu__navbar" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav main-menu__list">
+						<li class="main-menu__item main-menu__item_isactive"><a href="#" class="main-menu__link">Главная</a></li>
+						<li class="dropdown main-menu__item">
+							<a href="#" class="dropdown-toggle main-menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Телефоны <span class="caret"></span></a>
+							
+								<ul class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
+									<div class="row">
+										<div class="col-sm-6">
+											<a href="#" class="menu-dropdown-multicolumn__link"><img class="menu-dropdown-multicolumn__img"src="img/menu-mobile-s8.jpg" alt=""></a>
+										</div>
+										<div class="col-sm-3">
+											<ul class="menu-dropdown-multicolumn__list">
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy Note8</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy S8+</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy S8</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy S7</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy S6+</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy S6</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy A8</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-3">
+											<ul class="menu-dropdown-multicolumn__list">
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy J7 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy J5 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy J3 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy A7 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy A5 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Galaxy A3 2017</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link menu-dropdown-multicolumn__link_last">Все модели</a></li>
+											</ul>
+										</div>
+									</div>
+								</ul>
+
+						</li>
+						<li class="dropdown main-menu__item">
+							<a href="#" class="dropdown-toggle main-menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Планшеты <span class="caret"></span></a>
+							
+								<ul class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
+									<div class="row">
+										
+										<div class="col-sm-3">
+											<ul class="menu-dropdown-multicolumn__list">
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab A10.1</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab A7.0</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab S2 8.0</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab 2 10.1</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab Pro</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab S2 9.7</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab S3 9.7</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-3">
+											<ul class="menu-dropdown-multicolumn__list">
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab S2 9.7</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab E 9.6</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab 7.0+</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab 3 7.0</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab A 8.0</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link">Tab E 9.6</a></li>
+												<li class="menu-dropdown-multicolumn__item"><a href="#" class="menu-dropdown-multicolumn__link menu-dropdown-multicolumn__link_last">Все модели</a></li>
+											</ul>
+										</div>
+										<div class="col-sm-6">
+											<a href="#" class="menu-dropdown-multicolumn__link"><img class="menu-dropdown-multicolumn__img" src="img/menu-tablet.jpg" alt=""></a>
+										</div>
+									</div>
+								</ul>
+
+						</li>
+						<li class="main-menu__item"><a href="#" class="main-menu__link">Часы</a></li>
+						<li class="main-menu__item"><a href="#" class="main-menu__link">Аксессуары</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<div class="main-menu__box-right main-menu__box-right_mod">
+			<div class="shopping-cart shopping-cart_menu">
+				<a href="#" class="shopping-cart__link shopping-cart__link_menu">
+					<div class="shopping-cart__total">
+						<i class="fa fa-shopping-cart shopping-cart__icon shopping-cart__icon_menu" aria-hidden="true"></i>
+						<span class="simpleCart_total shopping-cart__total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity shopping-cart__quantity"></span>т.)
+					</div>
+				</a>
+				<p class="shopping-cart__quantity"><a href="#" class="simpleCart_empty shopping-cart__link_menu">Корзина пуста</a></p>		
+			</div>	
+		</div>
+		<div class="clearfix"></div>
+	</div><!-- //container -->
+</div><!-- //main-menu -->
+
+<div class="container">
+	<div class="row">
+		<div class="m-top-50"></div>
+<div class="col-sm-3">
+	<aside class="mobile-sidebar">
+		<div class="mobile-filter mobile-filter_mod">
+			<form action="">
+				<div class="min-max">
+					<h4 class="mobile-filter__title mobile-filter__title_first">Цена</h4>
+					<div id="slider-price"></div>
+					<input type="text" id="price-min" class="min-max__input"/>
+					<input type="text" id="price-max" class="min-max__input"/>
+				</div>
+				
+				<div class="switch-box">
+					<h4 class="mobile-filter__title">Кол-во SIM</h4>
+					<label class="switch-box__label">
+						<input type="radio" name="radio-one-sim" checked class="switch-box__radio">
+						<span class="switch-box__radio-custom"></span>
+						<span class="switch-box__radio-text">1 сим-карта</span>
+					</label>
+					<label class="switch-box__label">
+						<input type="radio" name="radio-one-sim" class="switch-box__radio">
+						<span class="switch-box__radio-custom"></span>
+						<span class="switch-box__radio-text">2 сим-карты</span>
+					</label>
+				</div>
+
+				<div class="switch-box">
+
+					<h4 class="mobile-filter__title">Тип экрана</h4>
+					<label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">AMOLED</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">Super AMOLED</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">IPS</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">TFT</span>
+          </label>
+
+				</div>
+				
+				<div class="min-max">
+					<h4 class="mobile-filter__title">Объем физической памяти в гигабайтах</h4>
+					<div id="slider-memory"></div>
+					<input type="text" id="memory-min" class="min-max__input"/>
+					<input type="text" id="memory-max" class="min-max__input"/>
+				</div>
+
+				<div class="switch-box">
+
+					<h4 class="mobile-filter__title">Диагональ экрана</h4>
+					<label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">6.2</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">5.8</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">5.7</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">5.5</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">5.3</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled" checked>
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">5.0</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">4.7</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">4.5</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">4.3</span>
+          </label>
+          <label class="switch-box__label">
+            <input class="switch-box__checkbox" type="checkbox" name="checkbox-amoled">
+            <span class="switch-box__checkbox-custom"></span>
+            <span class="switch-box__checkbox-text">4.0</span>
+          </label>
+
+				</div>
+
+				<div class="min-max">
+					<h4 class="mobile-filter__title">Объем оперативной памяти в мегабайтах</h4>
+					<div id="slider-ram"></div>
+					<input type="text" id="ram-min" class="min-max__input"/>
+					<input type="text" id="ram-max" class="min-max__input"/>
+				</div>
+
+				<div class="min-max">
+					<h4 class="mobile-filter__title">Количество мегапикселей фронтальной камеры</h4>
+					<div id="slider-frontal"></div>
+					<input type="text" id="frontal-min" class="min-max__input"/>
+					<input type="text" id="frontal-max" class="min-max__input"/>
+				</div>
+
+				<div class="min-max">
+					<h4 class="mobile-filter__title">Количество мегапикселей задней камеры</h4>
+					<div id="slider-camera"></div>
+					<input type="text" id="camera-min" class="min-max__input"/>
+					<input type="text" id="camera-max" class="min-max__input"/>
+				</div>
+				
+				<input class="mobile-filter__btn" type="button" id="" name="" value="Показать">
+				<input class="mobile-filter__btn mobile-filter__btn-clean" type="button" id="" name="" value="Очистить">
+			</form>
+
+	</div>
+	</aside>
+</div>
+
+
+
+<div class="col-sm-9 col-xs-12">
+	<div class="list-mobile">
+		
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s8-plus.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S8 Dual SIM 64GB (черный бриллиант) [G950FD]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 6.3" AMOLED (1440x2960), ОЗУ 6 ГБ, флэш-память 64 ГБ, карты памяти, камера 12 Мп, аккумулятор 3300 мАч, 2 SIM, цвет черный</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-pink"></i>Samsung Galaxy S8 Dual SIM 64GB (розовое золото) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S8 64GB (арктический серебристый) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-mistic">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-amethyst"></i>Samsung Galaxy S8 64GB (мистический аметист) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-yellow">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S8 64GB (желтый топаз) [G950FD]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$725</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+		
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s7.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S7 32GB Black Onyx [G930F]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 5.1" AMOLED (1440x2560), ОЗУ 4 ГБ, флэш-память 32 ГБ, карты памяти, камера 12 Мп, аккумулятор 3000 мАч, 1 SIM, цвет черный</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S7 32GB Gold Platinum [G930F]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S7 32GB Silver Titan [G930F]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-pink">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-pink"></i>Samsung Galaxy S7 32GB Pink Gold [G930F]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$410</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s6.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S6 Edge 32GB Black Sapphire [G925]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 5.1" AMOLED (1440x2560), ОЗУ 3 ГБ, флэш-память 32 ГБ, камера 16 Мп, аккумулятор 2600 мАч, 1 SIM, цвет синий</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S6 Edge 32GB Gold Platinum [G925]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-green">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-green"></i>Samsung Galaxy S6 Edge 32GB Green Emerald [G925]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S6 Edge 32GB Silver Titan [G925]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$390</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s8-plus.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S8 Dual SIM 64GB (черный бриллиант) [G950FD]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 6.3" AMOLED (1440x2960), ОЗУ 6 ГБ, флэш-память 64 ГБ, карты памяти, камера 12 Мп, аккумулятор 3300 мАч, 2 SIM, цвет черный</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-pink"></i>Samsung Galaxy S8 Dual SIM 64GB (розовое золото) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S8 64GB (арктический серебристый) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-mistic">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-amethyst"></i>Samsung Galaxy S8 64GB (мистический аметист) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-yellow">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S8 64GB (желтый топаз) [G950FD]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$725</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+		
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s7.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S7 32GB Black Onyx [G930F]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 5.1" AMOLED (1440x2560), ОЗУ 4 ГБ, флэш-память 32 ГБ, карты памяти, камера 12 Мп, аккумулятор 3000 мАч, 1 SIM, цвет черный</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S7 32GB Gold Platinum [G930F]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S7 32GB Silver Titan [G930F]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s7-pink">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-pink"></i>Samsung Galaxy S7 32GB Pink Gold [G930F]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$410</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s6.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S6 Edge 32GB Black Sapphire [G925]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 5.1" AMOLED (1440x2560), ОЗУ 3 ГБ, флэш-память 32 ГБ, камера 16 Мп, аккумулятор 2600 мАч, 1 SIM, цвет синий</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S6 Edge 32GB Gold Platinum [G925]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-green">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-green"></i>Samsung Galaxy S6 Edge 32GB Green Emerald [G925]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s6-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S6 Edge 32GB Silver Titan [G925]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$390</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+
+		<div class="list-mobile-box list-mobile-box_mod">
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__img">
+						<a href="#"><img src="img/list-s8-plus.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-12">
+					<div class="list-mobile-box__info">
+						<h3 class="list-mobile-box__title"><a href="#" class="list-mobile-box__link">Samsung Galaxy S8 Dual SIM 64GB (черный бриллиант) [G950FD]</a></h3>
+						<p class="list-mobile-box__text">Android, экран 6.3" AMOLED (1440x2960), ОЗУ 6 ГБ, флэш-память 64 ГБ, карты памяти, камера 12 Мп, аккумулятор 3300 мАч, 2 SIM, цвет черный</p>
+
+						<div class="switch-box">
+
+							<label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-gold">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-pink"></i>Samsung Galaxy S8 Dual SIM 64GB (розовое золото) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-silver">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-silver"></i>Samsung Galaxy S8 64GB (арктический серебристый) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-mistic">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-amethyst"></i>Samsung Galaxy S8 64GB (мистический аметист) [G950FD]</a></span>
+		          </label>
+		          <label class="switch-box__label">
+		            <input class="switch-box__checkbox" type="checkbox" name="s8-yellow">
+		            <span class="switch-box__checkbox-custom"></span>
+		            <span class="switch-box__checkbox-text switch-box__checkbox-text__small"><a href="#" class="switch-box__checkbox-link"><i class="color color-yellow"></i>Samsung Galaxy S8 64GB (желтый топаз) [G950FD]</a></span>
+		          </label>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<div class="list-mobile-box__add">
+						<span class="item_price list-mobile-box__price">$725</span>
+						<a href="#" class="item_add button button-add">Добавить</a>	
+					</div>								
+				</div>
+			</div>
+		</div><!-- //list-mobile-box -->
+
+		<div class="row">
+			<div class="main-pagination main-pagination_mod">
+				<ul class="pagination">
+				  <li class="disabled"><span>«</span></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">»</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+	</div>
+	<div class="row">
+		<small class="legal-info">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал гор толку, подзаголовок власти оксмокс инициал рыбного маленький последний обеспечивает по всей заглавных лучше большого грамматики от всех, точках, великий до дороге своего рыбными щеке все. Речью, текст. Рекламных маленькая рот взобравшись не встретил города щеке приставка это. Семь щеке грамматики наш его толку! За дал от всех заманивший, большого своих лучше приставка запятой, буквоград обеспечивает он. Осталось своих, снова он пояс ее своего на берегу рекламных не решила обеспечивает страна взгляд, ручеек несколько ты свой заголовок, проектах, маленький текст речью вопрос продолжил жаренные путь. Текстами которое вопроса, над языкового своего знаках взгляд.</small>
+	</div>
+</div>
+
+
+<footer class="main-footer main-footer_mod">
+
+	<div class="footer-top footer-top_mod">
+		<div class="container">
+			<div class="col-md-3">
+				<div class="footer-top__part">
+					<h3 class="footer-top__main-title">
+						Купите товар простым способом
+					</h3>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4">
+				<div class="footer-top__part">
+					<span class="footer-top__icon fa fa-user"></span>
+					<h4 class="footer-top__title">Войдите в аккаунт</h4>
+					<p class="footer-top__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4">
+				<div class="footer-top__part">
+					<span class="footer-top__icon fa fa-check"></span>
+					<h4 class="footer-top__title">Выберите товар</h4>
+					<p class="footer-top__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4">
+				<div class="footer-top__part">
+					<span class="footer-top__icon fa fa-cart-plus"></span>
+					<h4 class="footer-top__title">Произведите оплату</h4>
+					<p class="footer-top__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="footer-bottom footer-bottom_mod">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo logo_mod">
+						<a href="#" class="logo-link"><img src="img/logo.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="footer-bottom__part">
+						<h4 class="footer-bottom__title">О компании</h4>
+						<p class="footer-bottom__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О собрал власти даже дорогу пунктуация, коварный это. Живет, образ.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-bottom__part">
+						<h4 class="footer-bottom__title">Меню</h4>
+						<ul class="footer-bottom__menu-list">
+							<li class="footer-bottom__menu-item"><a href="#" class="footer-bottom__menu-link">Главная</a></li>
+							<li class="footer-bottom__menu-item"><a href="#" class="footer-bottom__menu-link">Телефоны</a></li>
+							<li class="footer-bottom__menu-item"><a href="#" class="footer-bottom__menu-link">Планшеты</a></li>
+							<li class="footer-bottom__menu-item"><a href="#" class="footer-bottom__menu-link">Часы</a></li>
+							<li class="footer-bottom__menu-item"><a href="#" class="footer-bottom__menu-link">Аксессуары</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-bottom__part">
+						<h4 class="footer-bottom__title">Контакты</h4>
+						<ul class="footer-bottom__contacts-list">
+							<li class="footer-bottom__contacts-item"><i class="fa fa-map-marker footer-bottom__contacts-icon"></i> ул.Чкалово 10</li>
+							<li class="footer-bottom__contacts-item"><i class="fa fa-envelope footer-bottom__contacts-icon"></i> <a href="mailto:info@example.com" class="footer-bottom__contacts-link">info@example.com</a></li>
+							<li class="footer-bottom__contacts-item"><i class="fa fa-phone footer-bottom__contacts-icon"></i> + 399 99 000 00 00</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-bottom__part">
+						<h4 class="footer-bottom__title">Instagram</h4>
+						<ul class="footer-bottom__img-list">
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-1.jpg" alt=""></a></li>
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-2.jpg" alt=""></a></li>
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-3.jpg" alt=""></a></li>
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-3.jpg" alt=""></a></li>
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-2.jpg" alt=""></a></li>
+							<li class="footer-bottom__img-item"><a href="#" class="footer-bottom__img-link"><img src="img/footer-1.jpg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</footer>
+
+
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/easyResponsiveTabs.js"></script>
+	<script src="js/simpleCart.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
