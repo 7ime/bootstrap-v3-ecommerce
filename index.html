@@ -66,7 +66,7 @@
 			</div>
 			<div class="col-md-6 col-sm-8 col-xs-12">
 
-				<form action="" class="search-form search-form_mod">
+				<form action="#" class="search-form search-form_mod">
 
 						<input type="search" class="search-form__input" value="Поиск" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Поиск';}" autofocus="autofocus" required="">
 
@@ -130,7 +130,7 @@
 				
 				<h3 id="myModalLabelLogin" class="modal-loginreg__main-title">Личный кабинет</h3>
 
-				<form action="" class="loginreg-form loginreg-form_mod">
+				<form action="#" class="loginreg-form loginreg-form_mod">
 					<div class="loginreg-form__part">
 						<h4 class="loginreg-form__title">Электронный почта:</h4>
 						<input type="text" class="loginreg-form__input" value="Эл. почта" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Эл. почта';}" required="">
@@ -171,7 +171,7 @@
 				
 				<h3 id="myModalLabelReg" class="modal-loginreg__main-title">Регистрация</h3>
 
-				<form action="" class="loginreg-form loginreg-form_mod">
+				<form action="#" class="loginreg-form loginreg-form_mod">
 					<div class="loginreg-form__part">
 						<h4 class="loginreg-form__title">Электронный почта:</h4>
 						<input type="text" class="loginreg-form__input" value="Эл. почта" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Эл. почта';}" required="">
@@ -216,10 +216,10 @@
 						<li class="dropdown main-menu__item">
 							<a href="#" class="dropdown-toggle main-menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Телефоны <span class="caret"></span></a>
 							
-								<ul class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
+								<div class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
 									<div class="row">
 										<div class="col-sm-6">
-											<a href="#" class="menu-dropdown-multicolumn__link"><img class="menu-dropdown-multicolumn__img"src="img/menu-mobile-s8.jpg" alt=""></a>
+											<a href="#" class="menu-dropdown-multicolumn__link"><img class="menu-dropdown-multicolumn__img" src="img/menu-mobile-s8.jpg" alt=""></a>
 										</div>
 										<div class="col-sm-3">
 											<ul class="menu-dropdown-multicolumn__list">
@@ -244,13 +244,13 @@
 											</ul>
 										</div>
 									</div>
-								</ul>
+								</div>
 
 						</li>
 						<li class="dropdown main-menu__item">
 							<a href="#" class="dropdown-toggle main-menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Планшеты <span class="caret"></span></a>
 							
-								<ul class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
+								<div class="dropdown-menu menu-dropdown-multicolumn menu-dropdown-multicolumn_mod">
 									<div class="row">
 										
 										<div class="col-sm-3">
@@ -279,7 +279,7 @@
 											<a href="#" class="menu-dropdown-multicolumn__link"><img class="menu-dropdown-multicolumn__img" src="img/menu-tablet.jpg" alt=""></a>
 										</div>
 									</div>
-								</ul>
+								</div>
 
 						</li>
 						<li class="main-menu__item"><a href="#" class="main-menu__link">Часы</a></li>
@@ -477,11 +477,11 @@
 		<h2 class="title-two title-two_mod"><span class="title-two__first-part">Основные</span> товары</h2>
 	
 
-	<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+	<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;" role="tablist">
 		<ul class="resp-tabs-list">
-			<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Телефоны</span></li> 
-			<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Умные Часы</span></li> 
-			<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Планшеты</span></li> 
+			<li class="resp-tab-item" id="tab_item-0" role="tab"><span>Телефоны</span></li> 
+			<li class="resp-tab-item" id="tab_item-1" role="tab"><span>Умные Часы</span></li> 
+			<li class="resp-tab-item" id="tab_item-2" role="tab"><span>Планшеты</span></li> 
 		</ul>				  	 
 		<div class="resp-tabs-container">
 
